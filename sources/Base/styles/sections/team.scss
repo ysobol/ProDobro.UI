@@ -1,0 +1,41 @@
+.team {
+    padding: 50px 0px;
+    background: #d3d3d36e;
+    margin-bottom: 0px;
+    &-items-container {
+        display: flex;
+        margin: auto;
+        padding: 80px 0px 50px 0px;
+        flex-wrap: wrap;
+        width: 60%;
+        .team-item {
+            display: inline-block;
+            margin: auto;
+            .team-item-img-container {
+                border-radius: 50%;
+                img {
+                    height: 220px;
+                    width: 220px;
+                }
+            }
+            .team-item-container {
+                text-align: center;
+                .team-item-name {
+                    font-weight: bold;
+                    padding: 20px 5px 10px 5px;
+                }
+            }
+            .team-item-social {
+                display: flex;
+                justify-content: center;
+                i {
+                    padding: 5px;
+                }
+            }
+        }
+    }
+    &-footer {
+        text-align: center;
+        padding: 0px 30px 80px 30px;
+    }
+}

@@ -1,0 +1,146 @@
+.header {
+    .container {       
+        background: #d3d3d36e url('../styles/resources/pro-dobro-welcome-img.png') center/cover no-repeat;
+        height: 100vh;
+    }
+    text-align: center;
+    color: white;
+    &-text {
+        margin: 30vh auto 0px auto;
+        margin-bottom: 30px;
+        .header-title {
+            padding: 15px 0px 0px 0px;
+            color: #faebd78f;
+            font-size: 3.5rem;
+            margin-bottom: 0;
+           
+            @media (max-width: $tab) {
+                padding: 15px 20%;
+                font-size: 2.5rem;
+            }
+            @media (max-width: $min-mobile) {
+                font-size: 2rem;
+            }
+        }
+        @media (max-width: $tab) {
+            margin-top: 20px;
+        }
+        @media (max-width: $min-mobile) {
+            margin-top: 10px;
+        }
+        .header-description {           
+            padding: 0px 37% 2% 37%;
+            font-size: 2rem;
+    font-weight: 300;
+    
+    h4{
+        color: #ffe6b694;
+    }
+            @media (max-width: $min-mobile) {
+                padding: 0px 20%;
+            }
+        }
+    }
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 40px;
+        opacity: 0.5;
+        background: gray;
+        @media (max-width: $tab) {
+            margin: 0px 5px;
+            padding: 30px 10px 0px 10px;
+        }
+
+       
+    }
+
+    .menu{
+
+         background: transparent;
+    color: white;
+
+    }
+
+   
+
+    .logo{
+        display: table;
+        padding-left:50px;
+
+        img{
+            height: 50%;
+            display: -webkit-inline-box;
+
+    vertical-align: middle;
+
+        }
+    }
+
+    .buttons-container{
+        .helps-buttons{
+            .help-button-container{
+                border-width: 2px; 
+     border-color: white; 
+     display: inline-block;
+                .help-button{                  
+                    width: 150px;
+                    opacity: 0.7;
+                    border-radius: 0;
+                    color: white;
+                    background: slategray;
+                    margin: 3px;
+                }
+            }
+
+           
+        }
+
+        .create-button-container{
+
+            .create-button{
+
+                
+            background: orangered;
+            border: 0;
+            width: 306px;
+            height: 50px;
+            text-transform: uppercase;
+            font-weight: 600;
+
+            }
+
+
+        }
+    }
+
+
+   
+
+    
+
+   
+
+  
+        
+}
+
+.social-buttons-container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .social-button{
+        border-radius: 0;
+        margin: 0;
+        width: 150px;
+        margin: 5px;
+
+        &.google{
+            background: red;
+        }
+
+    }
+
+}

@@ -1,0 +1,28 @@
+.title {
+    &-main {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 2.6rem;
+        margin-bottom: 20px;
+    }
+    &-sub {
+        text-transform: uppercase;
+        font-size: 1rem;
+        &-bold {
+            font-weight: bold;
+        }
+    }
+    &-with-bottom-line {
+        text-align: center;
+        display: block;
+        &:after {
+            content: '';
+            height: 0.1rem;
+            bottom: 0px;
+            background: $buttonLineColor;
+            width: 7rem;
+            display: block;
+            margin: 30px auto;
+        }
+    }
+}
