@@ -1,6 +1,6 @@
 import React, { Component, ReactDOM } from 'react';
 import { Select } from 'antd';
-const Option = Select.Option;  
+const Option = Select.Option;
 
 
 class Event extends React.Component {
@@ -13,7 +13,7 @@ class Event extends React.Component {
     fetch(value, data => this.setState({ data }));
   }
   render() {
-    const options = [{value:'hhh', text:'dddd'}].data.map(d => <Option key={d.value}>{d.text}</Option>);
+    const options = [{ value: 'hhh', text: 'dddd' }].data.map(d => <Option key={d.value}>{d.text}</Option>);
     return (
       <Select
         mode="combobox"
@@ -22,8 +22,8 @@ class Event extends React.Component {
         style={this.props.style}
         defaultActiveFirstOption={false}
         showSearch
-        showArrow={true}
-        filterOption={true}
+        showArrow
+        filterOption
         onChange={this.handleChange}
       >
         {options}

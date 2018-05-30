@@ -8,8 +8,8 @@
     "start": "webpack-dev-server --inline --hot --port 777 --history-api-fallback",
     "build": "webpack --env production",
     "serv": "static build",
-    "lint": "eslint --quiet --ext .js sources test",
-    "lint:fix": "eslint --quiet --fix --ext .js sources test"
+    "lint": "eslint --quiet --ext .js sources",
+    "lint:fix": "eslint --quiet --fix --ext .js sources"
   },
   "devDependencies": {
     "antd": "latest",
@@ -42,11 +42,23 @@
     "react-router": "^3.0.2",
     "react-ui-tree": "^2.6.0",
     "redux": "^3.7.2",
-    "sass-loader": "^6.0.6",
+    "sass-loader": "^7.0.1",
     "style-loader": "^0.16.1",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.6.1",
-    "webpack-merge": "^4.1.0"
+    "webpack-merge": "^4.1.0",
+    "eslint": "3.13.0",
+    "babel-eslint": "^7.1.1",
+    "eslint-config-airbnb": "13.0.0",
+    "eslint-config-defaults": "9.0.0",
+    "eslint-config-google": "0.7.1",
+    "eslint-config-standard": "6.2.1",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-jsx-a11y": "2.2.3",
+    "eslint-plugin-promise": "3.4.0",
+    "eslint-plugin-react": "6.8.0",
+    "eslint-plugin-react-native": "2.2.1",
+    "eslint-plugin-standard": "2.0.1"
   },
   "dependencies": {
     "antd": "latest",
