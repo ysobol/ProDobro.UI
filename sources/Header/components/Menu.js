@@ -11,10 +11,6 @@ class MenuComponent extends Component {
     };
   }
 
-//   setloginDialogVisible(loginDialogVisible) {
-//     this.setState({ loginDialogVisible });
-//   }
-
   handleClick = (e) => {
     this.setState({
       current: e.key,
@@ -34,9 +30,12 @@ class MenuComponent extends Component {
           key="user"
         ><Icon type="user" />Вход
         </Menu.Item>
+        <Menu.Item key="global">
+          <Icon type="global" />O наc
+        </Menu.Item>
         <Menu.Item key="mail">
           <Icon type="mail" />Связаться с нами
-          </Menu.Item>
+        </Menu.Item>
       </Menu>
     );
   }

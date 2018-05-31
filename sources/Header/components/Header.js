@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Button } from 'antd';
 import Menu from './Menu';
-import LoginDialog from './LoginDialog';
+import LoginDialog from './../../Login/components/LoginDialog';
 import HelpDialog from './HelpDialog';
+import EventDialog from './../../Event/components/EventDialog';
 
 class Header extends Component {
 
@@ -11,10 +12,12 @@ class Header extends Component {
     super(props);
     this.setloginDialogVisible = this.setloginDialogVisible.bind(this);
     this.setHelpDialogVisible = this.setHelpDialogVisible.bind(this);
+    this.setEventDialogVisible = this.setEventDialogVisible.bind(this);
 
     this.state = {
       loginDialogVisible: false,
       helpDialogVisible: false,
+      eventDialogVisible: false,
     };
   }
 
@@ -24,6 +27,15 @@ class Header extends Component {
 
   setHelpDialogVisible(helpDialogVisible) {
     this.setState({ helpDialogVisible });
+  }
+
+  setEventDialogVisible(eventDialogVisible) {
+    this.setState(
+      {
+        eventDialogVisible,
+        helpDialogVisible: false,
+      },
+    );
   }
 
   render() {
@@ -69,6 +81,11 @@ class Header extends Component {
         <HelpDialog
           setHelpDialogVisible={this.setHelpDialogVisible}
           isVisible={this.state.helpDialogVisible}
+          setEventDialogVisible={this.setEventDialogVisible}
+        />
+        <EventDialog
+          setEventDialogVisible={this.setEventDialogVisible}
+          isVisible={this.state.eventDialogVisible}
         />
       </header>
     );

@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import moment from 'moment';
-import { DatePicker, version } from 'antd';
 import 'antd/dist/antd.css';
-import 'Base/styles/main.scss';
-// import Event from  './Event/components/Event';
+import './Base/styles/main.scss';
+import Footer from './Footer/components/Footer';
 import Header from './Header/components/Header';
+import About from './About/components/About';
 
 ReactDOM.render(
   <div>
     <Header />
+    <About />
+    <Footer />
   </div>,
   document.getElementById('root'),
 );

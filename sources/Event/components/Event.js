@@ -1,37 +1,44 @@
-import React, { Component, ReactDOM } from 'react';
-import { Select } from 'antd';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { Select, Calendar } from 'antd';
+
 const Option = Select.Option;
 
+class Event extends Component {
 
-class Event extends React.Component {
-  state = {
-    data: [],
-    value: '',
+  constructor(props) {
+    super(props);   
   }
-  handleChange = (value) => {
-    this.setState({ value });
-    fetch(value, data => this.setState({ data }));
-  }
+
+
   render() {
-    const options = [{ value: 'hhh', text: 'dddd' }].data.map(d => <Option key={d.value}>{d.text}</Option>);
     return (
-      <Select
-        mode="combobox"
-        value={this.state.value}
-        placeholder={this.props.placeholder}
-        style={this.props.style}
-        defaultActiveFirstOption={false}
-        showSearch
-        showArrow
-        filterOption
-        onChange={this.handleChange}
-      >
-        {options}
-      </Select>
+      <div className="event-container">
+        <div className="organizations-container">
+          <Select
+            defaultValue="lucy"
+            style={{ width: 120 }}
+            onChange={''}
+          >
+            <Option value="jack">Jack</Option>
+            <Option value="lucy">Lucy</Option>
+            <Option value="disabled" disabled>Disabled</Option>
+            <Option value="Yiminghe">yiminghe</Option>
+          </Select>
+        </div>
+        <div style={{ width: 300, border: '1px solid #d9d9d9', borderRadius: 4 }}>
+          <Calendar
+            fullscreen={false}
+          />
+        </div>
+      </div>
     );
   }
 }
 
-ReactDOM.render(
-  <SearchInput placeholder="input search text" style={{ width: 200 }} />
-, mountNode);
+Event.propTypes = {
+  dispatch: PropTypes.func,
+};
+
+export default Event;
+

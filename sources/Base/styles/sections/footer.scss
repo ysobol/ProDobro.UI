@@ -1,110 +1,49 @@
-.footer {
-    background: #1c1c1c;
-    color: white;
-    .container {
-        max-width: 1400px;
-        margin: auto;
-        @media (max-width: $large-tab) {
-            width: 100%;
+.footer-container {
+
+    background: #403939;
+    display: flex;
+    justify-content: space-between;        
+    flex-direction: column;
+    padding: 20px;
+
+      
+
+
+    .logo-container {
+        display: table;  
+
+        img{
+            display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    margin-bottom: 10px;
         }
     }
-    &-main-container {
+
+
+    .social-container{
         display: flex;
-        flex-direction: column;
-        padding-top: 50px;
-        .footer-content {
-            display: flex;
-            flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 10px;
+
+
+        .social-button{
+            background: orangered;
+            border: none;
+            margin: 2px;
         }
-        .footer-container {
-            margin-bottom: 20px;
-            .footer-left-panel {
-                padding-right: 80px;
-                .footer-description {
-                    @media (max-width: $large-tab) {
-                        width: auto;
-                        padding: 0px 20px;
-                        text-align: center;
-                    }
-                }
-                .footer-title {
-                    text-align: left;
-                    font-size: 2.3rem;
-                    margin-bottom: 40px;
-                    @media (max-width: $large-tab) {
-                        text-align: center;
-                    }
-                }
-                .footer-contacts-container {
-                    flex-direction: column;
-                    display: flex;
-                    flex-wrap: wrap;
-                    height: 170px;
-                    .contact-item {
-                        display: table;
-                        margin-top: 20px;
-                        .contract-item-content,
-                        .contact-item-img-container {
-                            vertical-align: middle;
-                            display: table-cell;
-                        }
-                        .contract-item-content {
-                            padding-left: 5px;
-                        }
-                        @media (max-width:$large-tab) {
-                            margin-right: 20px;
-                        }
-                    }
-                    @media (max-width:$large-tab) {
-                        margin: 0px 140px;
-                    }
-                    @media (max-width:700px) {
-                        height: auto;
-                        margin: auto;
-                        width: fit-content;
-                    }
-                }
-                @media (max-width:$large-tab) {
-                    padding-right: 0px;
-                    margin: auto;
-                }
-            }
-            .footer-right-panel {
-                .submit-form-container {
-                    display: flex;
-                    flex-direction: column;
-                    input,
-                    textarea {
-                        width: 460px;
-                        margin-top: 20px;
-                        min-height: 45px;
-                        padding: 10px;
-                        color: black;
-                        @media (max-width: $min-mobile) {
-                            width: 250px;
-                        }
-                    }
-                    a {
-                        margin-top: 20px;
-                    }
-                }
-                @media (max-width:$large-tab) {
-                    margin: auto;
-                }
-            }
-        }
+
+    
     }
-    .footer-foter-description {
-        &:before {
-            content: '';
-            height: 0.1rem;
-            background: white;
-            width: 100%;
-            display: inline-block;
-        }
-        p {
-            margin: 20px 0px 10px 0px;
-            text-align: center;
-        }
+
+   
+
+    .copy-container{
+        text-align: center;
+        color: white;
     }
+
+
+   
 }
